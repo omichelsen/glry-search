@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calvin &amp; Hobbes Search</title>
+	<link href="styles/search.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav class="search">
+		<input class="search-input" id="search" type="text" placeholder="Search">
+	</nav>
+
+	<div id="results"></div>
+
+	<script id="tagcloud-template" type="text/x-handlebars-template">
+		<ul class="tagcloud">
+		{{#each tags}}
+			<li class="tag">
+				<a href="#{{encode this}}" class="tag-link">{{this}}</a>
+			</li>
+		{{/each}}
+		</ul>
+	</script>
+
+	<script id="results-template" type="text/x-handlebars-template">
+		<ol class="results">
+		{{#each results}}
+			<li>
+				<div class="result" id="{{id}}">
+					<img class="image" data-src="/{{{fileFromId id}}}" src="0.png" alt="{{id}}">
+					<div class="tags" id="tags{{id}}"></div>
+					<a class="permalink" href="/{{hashFromId id}}" target="_blank"><img src="hyperlink.svg" alt="Permanent link to cartoon"></a>
+				</div>
+			</li>
+		{{/each}}
+		</ol>
+	</script>
+
+	<script id="results-count-template" type="text/x-handlebars-template">
+		<div class="results-count">{{this}}</div>
+	</script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/superagent/1.2.0/superagent.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+	<script src="blazy.js"></script>
+	<script src="taggle.js"></script>
+	<script src="debounce.js"></script>
+	<script src="search.js"></script>
+
+</body>
+
+</html>
