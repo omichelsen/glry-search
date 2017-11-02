@@ -1,0 +1,23 @@
+{
+  "name": "glry-search",
+  "version": "1.0.0",
+  "description": "Backend API for glry-search.",
+  "main": "search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omichelsen/glry-search.git"
+  },
+  "author": "Ole Michelsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omichelsen/glry-search/issues"
+  },
+  "homepage": "https://github.com/omichelsen/glry-search#readme",
+  "dependencies": {
+    "lit-html": "^0.7.1",
+    "lit-html-element": "^0.6.10"
+  }
+}
