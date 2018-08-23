@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/omichelsen/glry-search#readme",
   "dependencies": {
-    "lit-html": "^0.7.1",
-    "lit-html-element": "^0.6.10"
+    "lit-html": "^0.10.2",
+    "lit-html-element": "^0.9.1"
   }
 }
