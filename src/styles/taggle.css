@@ -53,7 +53,8 @@
   cursor: pointer;
   transition: all 0.3s;
   animation-duration: 1s;
-  animation-fill-mode: both;
+	animation-fill-mode: both;
+	line-height: 100%;
 }
 
 /* line 283, ../../../sass/projects/taggle/taggle.scss */
@@ -63,18 +64,20 @@
 
 /* line 287, ../../../sass/projects/taggle/taggle.scss */
 .taggle_list .taggle .close {
-  font-size: 1.1rem;
-  position: absolute;
-  top: 5px;
-  right: 3px;
-  text-decoration: none;
-  padding-left: 2px;
-  padding-top: 3px;
-  line-height: 75%;
+	background: none;
+	border: none;
   color: #ccc;
   color: rgba(0, 0, 0, 0.2);
-  padding-bottom: 4px;
   display: none;
+  font-size: 1.1rem;
+  line-height: 75%;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  padding-top: 3px;
+  position: absolute;
+  right: 3px;
+  text-decoration: none;
+  top: 5px;
 }
 
 /* line 302, ../../../sass/projects/taggle/taggle.scss */

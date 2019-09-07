@@ -1,10 +1,11 @@
 {
   "name": "glry-search",
   "version": "1.0.0",
-  "description": "Backend API for glry-search.",
-  "main": "search.js",
+  "description": "Frontend for glry-search.",
+  "main": "dist/search.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/index.html dist/ --public-url .",
+    "start": "parcel src/index.html -p 8080"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,16 @@
   },
   "homepage": "https://github.com/omichelsen/glry-search#readme",
   "dependencies": {
-    "lit-html": "^0.7.1",
-    "lit-html-element": "^0.6.10"
-  }
+    "blazy": "^1.8.2",
+    "lit-html": "^1.1.2",
+    "lodash": "^4.17.15",
+    "taggle": "^1.14.4"
+  },
+  "devDependencies": {
+    "less": "^3.10.3",
+    "parcel-bundler": "^1.12.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }

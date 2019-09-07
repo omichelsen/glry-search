@@ -1,3 +1,3 @@
-# glry-search-api
+# glry-search
 
-Backend API for glry-search.
+Frontend for glry-search.
